@@ -10,33 +10,39 @@
     <androidx.core.widget.NestedScrollView
         android:id="@+id/nestedScrollView2"
         android:layout_width="wrap_content"
-        android:layout_height="100dp"
+        android:layout_height="400dp"
         android:layout_marginTop="30dp"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:id="@+id/myLayout"
+                android:layout_width="3000dp"
+                android:layout_height="1000dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/bg"
+                android:gravity="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
 
-        <RelativeLayout
-            android:id="@+id/myLayout"
-            android:layout_width="3000dp"
-            android:layout_height="1000dp"
-            android:layout_marginTop="30dp"
-            android:background="@drawable/bg"
-            android:gravity="center"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Tester"
-                android:textColor="@color/white"
-                android:textSize="36sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tester"
+                    android:textColor="@color/white"
+                    android:textSize="36sp" />
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"/>
 
 
-        </RelativeLayout>
+            </RelativeLayout>
+        </HorizontalScrollView>
 
     </androidx.core.widget.NestedScrollView>
 
